@@ -3,94 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Evans View Hotel: Luxury rooms, restaurant, spa, and relaxing stay in Ghana.">
 <title>Evans View Hotel</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Header / Hero -->
 <header>
-    <div class="hero-content">
-        <h1>Evans View Hotel</h1>
+    <div class="header-content">
+        <h1>Welcome to Evans View Hotel</h1>
         <p>Luxury Rooms & Exceptional Service in the Heart of Ghana</p>
-        <form class="booking-form">
-            <input type="date" name="checkin" placeholder="Check-in" required>
-            <input type="date" name="checkout" placeholder="Check-out" required>
-            <select name="guests" required>
-                <option value="">Guests</option>
-                <option value="1">1 Guest</option>
-                <option value="2">2 Guests</option>
-                <option value="3">3 Guests</option>
-                <option value="4">4 Guests</option>
-            </select>
-            <button type="submit">Book Now</button>
-        </form>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
-<!-- Rooms Section -->
+<main>
 <section id="rooms">
     <h2>Our Rooms</h2>
     <div class="room-list">
-        <div class="room">
-            <img src="images/deluxe.jpg" alt="Deluxe Room">
-            <div>
-                <h3>Deluxe Room</h3>
-                <p>Spacious room with king-size bed and private balcony.</p>
-            </div>
-        </div>
-        <div class="room">
-            <img src="images/suite.jpg" alt="Suite">
-            <div>
-                <h3>Suite</h3>
-                <p>Elegant suite with living area, kitchenette, and city view.</p>
-            </div>
-        </div>
-        <div class="room">
-            <img src="images/family.jpg" alt="Family Room">
-            <div>
-                <h3>Family Room</h3>
-                <p>Perfect for families with multiple beds and amenities.</p>
-            </div>
-        </div>
+        <div class="room"><img src="images/deluxe.jpg" alt="Deluxe Room"><div><h3>Deluxe Room</h3><p>Spacious room with king-size bed and private balcony.</p></div></div>
+        <div class="room"><img src="images/suite.jpg" alt="Suite"><div><h3>Suite</h3><p>Elegant suite with living area, kitchenette, and city view.</p></div></div>
+        <div class="room"><img src="images/family.jpg" alt="Family Room"><div><h3>Family Room</h3><p>Perfect for families with multiple beds.</p></div></div>
     </div>
 </section>
 
-<!-- Services Section -->
 <section id="services">
     <h2>Our Services</h2>
     <div class="service-list">
-        <div class="service">
-            <img src="images/restaurant.jpg" alt="Restaurant">
-            <div><h3>Restaurant & Bar</h3><p>Gourmet dishes prepared by our professional chefs.</p></div>
-        </div>
-        <div class="service">
-            <img src="images/lobby.jpg" alt="Lobby">
-            <div><h3>Lobby & Reception</h3><p>Elegant and welcoming lobby area for our guests.</p></div>
-        </div>
-        <div class="service">
-            <img src="images/pool.jpg" alt="Swimming Pool">
-            <div><h3>Swimming Pool</h3><p>Outdoor pool to relax and unwind during your stay.</p></div>
-        </div>
+        <div class="service"><img src="images/restaurant.jpg" alt="Restaurant"><div><h3>Restaurant & Bar</h3><p>Gourmet dishes prepared by our professional chefs.</p></div></div>
+        <div class="service"><img src="images/lobby.jpg" alt="Lobby"><div><h3>Lobby & Reception</h3><p>Elegant and welcoming lobby area for guests.</p></div></div>
+        <div class="service"><img src="images/pool.jpg" alt="Swimming Pool"><div><h3>Swimming Pool</h3><p>Outdoor pool to relax and unwind during your stay.</p></div></div>
     </div>
 </section>
 
-<!-- Gallery Section -->
-<section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-        <img src="images/deluxe.jpg" alt="Deluxe Room">
-        <img src="images/suite.jpg" alt="Suite">
-        <img src="images/family.jpg" alt="Family Room">
-        <img src="images/lobby.jpg" alt="Lobby">
-        <img src="images/restaurant.jpg" alt="Restaurant">
-        <img src="images/pool.jpg" alt="Swimming Pool">
-    </div>
-</section>
-
-<!-- Contact Section -->
 <section id="contact">
     <h2>Contact Us</h2>
     <form>
@@ -100,14 +52,12 @@
         <button type="submit">Send Message</button>
     </form>
 </section>
+</main>
 
-<!-- Footer -->
 <footer>
-    <p>&copy; <span id="year"></span> Evans View Hotel. All rights reserved.</p>
+<p>&copy; <span id="year"></span> Evans View Hotel. All rights reserved.</p>
 </footer>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
