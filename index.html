@@ -10,26 +10,27 @@
 </head>
 <body>
 
+<!-- Header / Hero -->
 <header>
-    <div class="header-content">
-        <h1>Welcome to Evans View Hotel</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="booking.html">Booking</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="hero-content">
+        <h1>Evans View Hotel</h1>
+        <p>Luxury Rooms & Exceptional Service in the Heart of Ghana</p>
+        <form class="booking-form">
+            <input type="date" name="checkin" placeholder="Check-in" required>
+            <input type="date" name="checkout" placeholder="Check-out" required>
+            <select name="guests" required>
+                <option value="">Guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
     </div>
 </header>
 
-<main>
-<section id="about">
-    <h2>About Us</h2>
-    <p>Evans View Hotel offers luxury accommodation with stunning views, exceptional service, and a relaxing atmosphere. Experience comfort and elegance in the heart of Ghana.</p>
-</section>
-
+<!-- Rooms Section -->
 <section id="rooms">
     <h2>Our Rooms</h2>
     <div class="room-list">
@@ -48,56 +49,48 @@
             </div>
         </div>
         <div class="room">
-            <img src="images/standard.jpg" alt="Standard Room">
-            <div>
-                <h3>Standard Room</h3>
-                <p>Comfortable room ideal for solo travelers or couples.</p>
-            </div>
-        </div>
-        <div class="room">
             <img src="images/family.jpg" alt="Family Room">
             <div>
                 <h3>Family Room</h3>
-                <p>Spacious room perfect for families with multiple beds.</p>
-            </div>
-        </div>
-        <div class="room">
-            <img src="images/single.jpg" alt="Single Room">
-            <div>
-                <h3>Single Room</h3>
-                <p>Cozy room designed for solo travelers.</p>
+                <p>Perfect for families with multiple beds and amenities.</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Services Section -->
 <section id="services">
     <h2>Our Services</h2>
     <div class="service-list">
         <div class="service">
             <img src="images/restaurant.jpg" alt="Restaurant">
-            <div>
-                <h3>Restaurant</h3>
-                <p>Enjoy gourmet dishes prepared by our professional chefs.</p>
-            </div>
+            <div><h3>Restaurant & Bar</h3><p>Gourmet dishes prepared by our professional chefs.</p></div>
         </div>
         <div class="service">
             <img src="images/lobby.jpg" alt="Lobby">
-            <div>
-                <h3>Lobby & Reception</h3>
-                <p>Relax in our welcoming and elegant lobby.</p>
-            </div>
+            <div><h3>Lobby & Reception</h3><p>Elegant and welcoming lobby area for our guests.</p></div>
         </div>
         <div class="service">
             <img src="images/pool.jpg" alt="Swimming Pool">
-            <div>
-                <h3>Swimming Pool</h3>
-                <p>Take a refreshing dip in our outdoor pool.</p>
-            </div>
+            <div><h3>Swimming Pool</h3><p>Outdoor pool to relax and unwind during your stay.</p></div>
         </div>
     </div>
 </section>
 
+<!-- Gallery Section -->
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <img src="images/deluxe.jpg" alt="Deluxe Room">
+        <img src="images/suite.jpg" alt="Suite">
+        <img src="images/family.jpg" alt="Family Room">
+        <img src="images/lobby.jpg" alt="Lobby">
+        <img src="images/restaurant.jpg" alt="Restaurant">
+        <img src="images/pool.jpg" alt="Swimming Pool">
+    </div>
+</section>
+
+<!-- Contact Section -->
 <section id="contact">
     <h2>Contact Us</h2>
     <form>
@@ -107,8 +100,8 @@
         <button type="submit">Send Message</button>
     </form>
 </section>
-</main>
 
+<!-- Footer -->
 <footer>
     <p>&copy; <span id="year"></span> Evans View Hotel. All rights reserved.</p>
 </footer>
@@ -118,4 +111,3 @@ document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
-
