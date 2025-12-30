@@ -1,236 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evans View Hotel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background: url('https://images.unsplash.com/photo-1560347876-aeef00ee58a1') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3em;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-        }
-
-        nav {
-            background: #222;
-            padding: 1em;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 1em;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 4em 2em;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .about, .rooms, .services, .contact {
-            margin-bottom: 3em;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 1em;
-            color: #444;
-        }
-
-        .rooms .room-list, .services .service-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2em;
-        }
-
-        .room, .service {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .room img, .service img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .room div, .service div {
-            padding: 1em;
-        }
-
-        .contact form {
-            max-width: 600px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contact input, .contact textarea {
-            padding: 0.8em;
-            margin-bottom: 1em;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact button {
-            padding: 1em;
-            border: none;
-            background: #444;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 2em;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Evans View Hotel: Luxury rooms, restaurant, spa, and relaxing stay in Ghana.">
+<title>Evans View Hotel</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+
+<header>
+    <h1>Welcome to Evans View Hotel</h1>
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#rooms">Rooms</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+</header>
 
-    <!-- Hero Section -->
-    <header>
-        <h1>Welcome to Evans View Hotel</h1>
-    </header>
+<main>
+<section id="about">
+    <h2>About Us</h2>
+    <p>Evans View Hotel offers luxury accommodation with stunning views, exceptional service, and a relaxing atmosphere. Experience comfort and elegance in the heart of Ghana.</p>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>Evans View Hotel offers luxury accommodation with stunning views, exceptional service, and a relaxing atmosphere. Experience comfort and elegance in the heart of Ghana.</p>
-    </section>
-
-    <!-- Rooms Section -->
-    <section id="rooms" class="rooms">
-        <h2>Our Rooms</h2>
-        <div class="room-list">
-            <div class="room">
-                <img src="https://images.unsplash.com/photo-1598928506314-3c62ce78b7a0?auto=format&fit=crop&w=800&q=80" alt="Deluxe Room">
-                <div>
-                    <h3>Deluxe Room</h3>
-                    <p>Spacious room with king-size bed and private balcony.</p>
-                </div>
-            </div>
-            <div class="room">
-                <img src="https://images.unsplash.com/photo-1576675781687-1f3b58b0d03b?auto=format&fit=crop&w=800&q=80" alt="Suite">
-                <div>
-                    <h3>Suite</h3>
-                    <p>Elegant suite with living area, kitchenette, and city view.</p>
-                </div>
-            </div>
-            <div class="room">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Standard Room">
-                <div>
-                    <h3>Standard Room</h3>
-                    <p>Comfortable room ideal for solo travelers or couples.</p>
-                </div>
-            </div>
-            <div class="room">
-                <img src="https://images.unsplash.com/photo-1598928506548-42d4d0f9287c?auto=format&fit=crop&w=800&q=80" alt="Family Room">
-                <div>
-                    <h3>Family Room</h3>
-                    <p>Spacious room perfect for families with multiple beds.</p>
-                </div>
-            </div>
-            <div class="room">
-                <img src="https://images.unsplash.com/photo-1576675781685-0ff5a3deea18?auto=format&fit=crop&w=800&q=80" alt="Single Room">
-                <div>
-                    <h3>Single Room</h3>
-                    <p>Cozy room designed for solo travelers.</p>
-                </div>
-            </div>
+<section id="rooms">
+    <h2>Our Rooms</h2>
+    <div class="room-list">
+        <div class="room">
+            <img src="images/deluxe.jpg" alt="Deluxe Room">
+            <div><h3>Deluxe Room</h3><p>Spacious room with king-size bed and private balcony.</p></div>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-list">
-            <div class="service">
-                <img src="https://images.unsplash.com/photo-1576675781687-1f3b58b0d03b" alt="Restaurant">
-                <div>
-                    <h3>Restaurant</h3>
-                    <p>Enjoy gourmet dishes prepared by our professional chefs.</p>
-                </div>
-            </div>
-            <div class="service">
-                <img src="https://images.unsplash.com/photo-1553784259-7c8ccecd6e8e" alt="Spa">
-                <div>
-                    <h3>Spa & Wellness</h3>
-                    <p>Relax and rejuvenate with our exclusive spa services.</p>
-                </div>
-            </div>
-            <div class="service">
-                <img src="https://images.unsplash.com/photo-1562774051-9e8ef9d7f92a" alt="Pool">
-                <div>
-                    <h3>Swimming Pool</h3>
-                    <p>Take a refreshing dip in our outdoor swimming pool.</p>
-                </div>
-            </div>
+        <div class="room">
+            <img src="images/suite.jpg" alt="Suite">
+            <div><h3>Suite</h3><p>Elegant suite with living area, kitchenette, and city view.</p></div>
         </div>
-    </section>
+        <div class="room">
+            <img src="images/standard.jpg" alt="Standard Room">
+            <div><h3>Standard Room</h3><p>Comfortable room ideal for solo travelers or couples.</p></div>
+        </div>
+        <div class="room">
+            <img src="images/family.jpg" alt="Family Room">
+            <div><h3>Family Room</h3><p>Spacious room perfect for families with multiple beds.</p></div>
+        </div>
+        <div class="room">
+            <img src="images/single.jpg" alt="Single Room">
+            <div><h3>Single Room</h3><p>Cozy room designed for solo travelers.</p></div>
+        </div>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+        <div class="service">
+            <img src="images/restaurant.jpg" alt="Restaurant">
+            <div><h3>Restaurant</h3><p>Enjoy gourmet dishes prepared by our professional chefs.</p></div>
+        </div>
+        <div class="service">
+            <img src="images/lobby.jpg" alt="Lobby">
+            <div><h3>Lobby & Reception</h3><p>Relax in our welcoming and elegant lobby.</p></div>
+        </div>
+        <div class="service">
+            <img src="images/pool.jpg" alt="Pool">
+            <div><h3>Swimming Pool</h3><p>Take a refreshing dip in our outdoor pool.</p></div>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Evans View Hotel. All rights reserved.</p>
-    </footer>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" name="user_name" placeholder="Your Name" required>
+        <input type="email" name="user_email" placeholder="Your Email" required>
+        <textarea name="user_message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> Evans View Hotel. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
