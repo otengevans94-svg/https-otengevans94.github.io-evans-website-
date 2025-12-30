@@ -2,29 +2,221 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Evans View Hotel | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evans View Hotel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1560347876-aeef00ee58a1') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        nav {
+            background: #222;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 4em 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .about, .rooms, .services, .contact {
+            margin-bottom: 3em;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1em;
+            color: #444;
+        }
+
+        .rooms .room-list, .services .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2em;
+        }
+
+        .room, .service {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .room img, .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .room div, .service div {
+            padding: 1em;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input, .contact textarea {
+            padding: 0.8em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 1em;
+            border: none;
+            background: #444;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h1>Evans View Hotel</h1>
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-</header>
 
-<section>
-    <h2>Welcome to Evans View Hotel</h2>
-    <p>Evans View Hotel offers comfortable accommodation, quality service, and a relaxing environment for both business and leisure travelers.</p>
-    <img src="images/hotel1.jpg" alt="Hotel Building" width="400">
-</section>
+    <!-- Hero Section -->
+    <header>
+        <h1>Welcome to Evans View Hotel</h1>
+    </header>
 
-<footer>
-    <p>&copy; 2026 Evans View Hotel. All Rights Reserved.</p>
-</footer>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Evans View Hotel offers luxury accommodation with stunning views, exceptional service, and a relaxing atmosphere. Experience comfort and elegance in the heart of Ghana.</p>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room-list">
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1560448070-7d995f6b9f11" alt="Deluxe Room">
+                <div>
+                    <h3>Deluxe Room</h3>
+                    <p>Spacious room with king-size bed and private balcony.</p>
+                </div>
+            </div>
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1501117716987-c8e0a4a03a21" alt="Suite">
+                <div>
+                    <h3>Suite</h3>
+                    <p>Elegant suite with living area, kitchenette, and city view.</p>
+                </div>
+            </div>
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1582719478185-1b502524b6c7" alt="Standard Room">
+                <div>
+                    <h3>Standard Room</h3>
+                    <p>Comfortable room ideal for solo travelers or couples.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1576675781687-1f3b58b0d03b" alt="Restaurant">
+                <div>
+                    <h3>Restaurant</h3>
+                    <p>Enjoy gourmet dishes prepared by our professional chefs.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1553784259-7c8ccecd6e8e" alt="Spa">
+                <div>
+                    <h3>Spa & Wellness</h3>
+                    <p>Relax and rejuvenate with our exclusive spa services.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1562774051-9e8ef9d7f92a" alt="Pool">
+                <div>
+                    <h3>Swimming Pool</h3>
+                    <p>Take a refreshing dip in our outdoor swimming pool.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Evans View Hotel. All rights reserved.</p>
+    </footer>
 </body>
 </html>
